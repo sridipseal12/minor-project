@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="welcome.css">    
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown">
+            <button class="dropdown-btn">My Profile</button>
+            <ul class="dropdown-content">
+                <a href="#">My Recent Roles</a><br>
+                <a href="#">My Conferences</a><br>
+                <a href="#">My Preprints</a><br>
+                <a href="#">My Slides</a>
+            </ul>
+        </div>
+        <h1 class="heading">ConfoConnect</h1>
+    </div>
+    <nav class="navbar" >
+        <ul>
+            <li><a href="conference.html">Conferences</a></li>
+            <li><a href="cfp.html">CFP</a></li>
+            <li class="last"><a href="slides.html">Slides</a></li>
+            <div class="container1">
+                <button class="logout" onclick="return logout1();"><b>Logout</b></button>     
+            </div>
+        </ul>        
+    </nav>
+    <p id="abc">{User Name}, Welcome to Easy Chair</p><br>
+    <div class="container3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse perspiciatis veniam velit laudantium ipsam! Minima doloribus cum dicta. Blanditiis aliquam corporis ipsa perferendis atque eveniet alias ratione dolorem fugit cum, consequuntur dolorum, commodi est odio officia mollitia saepe eum.</p>
+        <a href="#">Click here</a> to publish papers
+    </div>
+
+    <script>
+        // JavaScript to handle the dropdown functionality
+        document.querySelector('.dropdown-btn').addEventListener('click', function() {
+          var dropdownContent = document.querySelector('.dropdown-content');
+          dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        });
+        
+
+        function logout1(){
+            location.replace("login.html");
+        }
+      </script>
+</body>
+</html>

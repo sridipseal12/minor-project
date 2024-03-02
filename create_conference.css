@@ -1,0 +1,74 @@
+/* Create Conference CSS */
+
+body{
+    margin: 0;
+}
+.pagetitle{ 
+    font-family: "Roboto_Slab variant0";
+    font-size: 125%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.header button
+{
+    float: right;
+    margin-top: 30px;
+    margin-right: 30px;
+    border-color: black;
+}
+.a
+{
+    margin-top: 60px;
+    width: 80px;
+    height :70px;
+    float: right;
+    padding-bottom: 80px;
+    padding-right: 20px;
+}
+.hb{
+    padding-bottom: 10px;
+}
+img
+{
+    height: 100px;
+    width: 150px;
+}
+.star{
+    display: inline;
+    color: red;
+}
+.form-body{
+
+    width:50%;
+    background-color: #eff2f6;
+    padding: 25px 45px 25px;
+    border: solid #aaa 1px;
+    margin-top: 0px;
+    margin-left: 30px;
+    box-shadow: 4px 4px 3px rgba(0,0,0,0.15);
+}
+.signup-button{
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 8px 25px 8px;
+    background-color: rgb(72, 83,208);
+    border-radius: 5px;
+    color:white;
+    font-weight: 600;
+    border: 1px #999 solid;
+    cursor: pointer;
+}
+.signup-button:hover{
+    background-color: white;
+    color: rgb(72, 83, 208);
+}
+.below-formhead, .username, .city, .start-date{
+    padding-bottom: 6px;
+}
+.acronym{
+    padding-top: 6px;
+}
+p{
+    margin: 0px;
+}
+

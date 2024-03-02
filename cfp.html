@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calls For Papers</title>
+    <link rel="stylesheet" href="cfp.css">    
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown">
+            <button class="dropdown-btn">My Profile</button>
+            <ul class="dropdown-content">
+                <a href="#">My Recent Roles</a><br>
+                <a href="#">My Conferences</a><br>
+                <a href="#">My Preprints</a><br>
+                <a href="#">My Slides</a>
+            </ul>
+        </div>
+        <h1 class="heading">ConfoConnect</h1>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="conference.html">Conferences</a></li>
+            <li><a href="cfp.html">CFP</a></li>
+            <li class="last"><a href="slides.html">Slides</a></li>
+            <div class="container1">
+                <button class="logout" onclick="return logout1();"><b>Logout</b></button>     
+            </div>
+        </ul>        
+    </nav>
+    <div class="callforpaper">
+        <p class="heading1">My Calls For Papers</p>
+        <p>The ConfoConnect Smart CFP (Calls For Papers) service allows our users to publish</p>
+        <ul class="ul-body">
+            <li>conference calls for papers and calls for participation;</li>
+            <li>conference calls for papers and calls for participation;</li>
+            <li>conference calls for papers and calls for participation;</li>
+            <li>conference calls for papers and calls for participation;</li>
+        </ul>
+    </div>
+    <p class="below-body">You have not created any CFP in ConfoConnect. Click here to access ConfoConnect Smart CFP!</p>
+    <a href="#">
+        <button class="button-below">Create new CFP</button>
+    </a>
+    <script>
+        // JavaScript to handle the dropdown functionality
+        document.querySelector('.dropdown-btn').addEventListener('click', function() {
+          var dropdownContent = document.querySelector('.dropdown-content');
+          dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        });
+        
+
+        function logout1(){
+            location.replace("login.html");
+        }
+      </script>
+</body>
+</html>

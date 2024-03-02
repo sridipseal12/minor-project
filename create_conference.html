@@ -1,0 +1,82 @@
+<!-- Create Conference HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Conference</title>
+    <link rel="stylesheet" href="create_conference.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png">
+        <img class="a" src="login image.png">
+    </div>
+    <div class="summary" style="background-color: rgb(206, 206, 206); padding: 8px 0px 8px 30px;border-bottom: 0.5px solid rgb(158, 157, 157);border-top: 0.5px solid rgb(158, 157, 157);" >
+        <div class="pagetitle">
+            Create Conference in ConfoConnect
+        </div>
+        <div class="hb">
+            Using this page you can Create a new Conference
+        </div>
+    </div>
+    <br>
+
+    <form action="conference.html" method="post"  class="form-body">
+        <div class="below-formhead">
+            <b>CFP type.</b><br>
+            Specify the type of your CFP click for more information. <br>
+            If the required type is not listed, choose 'Other'. <br>
+        </div>
+        <div>
+            Type: <div class="star">*</div> 
+            <select name="option" id="option">
+                <option value="conference">conference</option>
+            </select>
+        </div>
+        <br>
+
+        <div class="below-formhead">
+            <b>Name and acronym.</b><br>
+        </div>        
+        <div class="conf-name">
+            Conference Name: <div class="star">*</div> <input type="text" size="40" required>
+        </div>
+        <div class="acronym" >
+            Acronym: <div class="star">*</div> <input type="text" size="40" required>
+        </div>
+        <br><hr><br>
+
+        <div class="below-formhead">
+            <b>Conference information.</b><br>
+        </div>  
+        <div class="username">
+            Web Page: <input type="text" size="40" required maxlength="20">
+        </div>
+        <div class="city" >
+            City: <div class="star">*</div> <input type="text" size="40" required>
+        </div>
+        <div class="country" >
+            Country: <div class="star">*</div> <input type="text" size="40" required>
+        </div>
+        <br><hr><br>
+
+        <div class="below-formhead">
+            <b>Dates.</b>
+            <p>All dates must be in the format dd-mm-yyyy.</p>
+        </div>
+        <div class="start-date" >
+            Conference First Date: <div class="star">*</div> 
+            <input type="date" id="birthday" name="birthday">
+        </div>
+        <div class="end-date" >
+            Conference End Date: <div class="star">*</div> 
+            <input type="date" id="birthday" name="birthday">
+        </div>
+
+        <center><input type="submit" value="Continue" class="signup-button"></center> 
+        <br>
+    </form>
+</body>
+</html>

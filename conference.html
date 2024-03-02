@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Conferences</title>
+    <link rel="stylesheet" href="conference.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown">
+            <button class="dropdown-btn">My Profile</button>
+            <ul class="dropdown-content">
+                <a href="#">My Recent Roles</a><br>
+                <a href="#">My Conferences</a><br>
+                <a href="#">My Preprints</a><br>
+                <a href="#">My Slides</a>
+            </ul>
+        </div>
+        <h1 class="heading">ConfoConnect</h1>
+    </div>
+    <nav class="navbar" >
+        <ul>
+            <li><a href="conference.html">Conferences</a></li>
+            <li><a href="cfp.html">CFP</a></li>
+            <li class="last"><a href="slides.html">Slides</a></li>
+            <div class="container1">
+                <button class="logout" onclick="return logout1();"><b>Logout</b></button>     
+            </div>
+        </ul>        
+    </nav>
+    <div class="conference-heading">
+        My Conferences
+    </div>
+    <div class="preprints-body">
+        <p class="preprint-heading">ConfoConnect Preprints</p>
+        <p>You can now publish your preprints in ConfoConnect. Click the Preprints menu tab to access the preprint publishing environment.</p>
+        <p>You can either convert one of your recent ConfoConnect paper to a preprint or create a completely new preprint.</p>
+        <p><a href="#">Click here </a>to access published preprints.</p>
+    </div>
+    <p class="last1">There seems to be no ConfoConnect conferences you have been involved.</p>
+
+<script>
+        // JavaScript to handle the dropdown functionality
+        document.querySelector('.dropdown-btn').addEventListener('click', function() {
+          var dropdownContent = document.querySelector('.dropdown-content');
+          dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        });
+        
+
+        function logout1(){
+            location.replace("login.html");
+        }
+      </script>     
+</body>
+</html>
